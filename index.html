@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Von 'C' wie 'Corpus' bis 'W' wie Wörterbuch. Digitale Methodik in der Geisteswissenschaftlichen Grundlagen- und Langzeitforschung.</title>
+
+    <!-- meta information -->
+    <meta name="author" content="Torsten Schrade" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="resources/img/favicon.png" />
+    <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+    <!-- CSS reset and grid -->
+    <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+    <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+    <!-- styles for included libraries -->
+
+    <!-- chartist -->
+    <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+    <!-- unite gallery -->
+    <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+
+    <!-- codemirror -->
+    <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+    <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+    <!-- standard presentation styles -->
+    <link href="resources/css/style.css" rel="stylesheet" />
+
+    <!-- custom presentation styles -->
+    <link href="resources/css/custom.css" rel="stylesheet" />
+
+    <!-- js needed in head -->
+
+    <!-- greuler -->
+    <script src="vendor/d3/d3-3.5.6.js"></script>
+    <script src="vendor/cola/cola.v3.min.js"></script>
+    <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+    <!-- html5 dataset shim for IE -->
+    <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="fallback-message">
+        <p>
+            Your browser <strong>doesn't support the features required</strong> by impress.mod.js,
+            so you are presented with a simplified version of this presentation.
+        </p>
+        <p>
+            For the best experience please use the latest <strong>Chrome</strong>, <strong>Safari</strong>
+            or <strong>Firefox</strong> browser.
+        </p>
+    </div>
+
+    <div id="impress">
+
+        <div class="step">
+            <h4 class="down-25"><strong>26.01.2017 | Universität Trier</strong></h4>
+            <h4 class="up-25"><strong><a href="http://kompetenzzentrum.uni-trier.de/de/extra/aktuell/wissenschaftliches-kolloquium-im-wintersemester-2016-2017-digita/">Wissenschaftliches Kolloquium "Digital Humanities in Practice"</a></strong></h4>
+
+            <h1>Von 'C' wie 'Corpus' bis 'W' wie Wörterbuch.</h1>
+
+            <h2 class="red up-25" style="font-size: 42px;">Digitale Methodik in der Geisteswissenschaftlichen Grundlagen- und Langzeitforschung.</h2>
+
+            <h4>
+                <strong>Slides:</strong>
+                <a href="https://github.com/metacontext/2017-dhkolloq-trier" title="View the presentation online">
+                    https://github.com/metacontext/2017-dhkolloq-trier
+                </a>
+            </h4>
+
+            <h5>
+                <strong><a href="https://orcid.org/0000-0002-0953-2818">Torsten Schrade, Akademie Mainz</a></strong> |
+                <img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
+                <a href="https://twitter.com/digicademy" title="Digital Academy on Twitter">@digicademy</a> |
+                <img src="resources/img/Octicons-mark-github.svg" alt="Twitter" class="gh-icon" />
+                <a href="https://github.com/digicademy/" title="Digital Academy on GitHub">digicademy</a> |
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+            </h5>
+        </div>
+
+        <div class="step">
+            <h2>Themen</h2>
+            <div class="row">
+                <div class="six columns">
+                    <dl class="toc">
+                        <dt class="red">A</dt>
+                        <dd>Akademien</dd>
+                        <dt class="red">C</dt>
+                        <dd>Corpus Vitrearum Medii Aevi</dd>
+                        <dt class="red">D</dt>
+                        <dd>Digitale Akademie</dd>
+                        <dt class="red">E</dt>
+                        <dd>Edition der Augsburger Baumeisterbücher</dd>
+                    </dl>
+                </div>
+                <div class="six columns">
+                    <dl class="toc">
+                        <dt class="red">F</dt>
+                        <dd>Forschung</dd>
+                        <dt class="red">I</dt>
+                        <dd>Inschriften Online</dd>
+                        <dt class="red">P</dt>
+                        <dd>Projekte</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">A</h1>
+                <h2 class="line-height-one-five">
+                    Akademien
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h2 class="down-50">Die Akademienunion</h2>
+                <object data="resources/svg/akademien.svg" type="image/svg+xml" width="65%" class="up-25"></object>
+                <p class="x-small up-50">
+                    Die Union der deutschen Akademien der Wissenschaften ist die
+                    Dachorganisation von acht deutschen Wissenschaftsakademien.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 class="down-25">Das Akademienprogramm</h2>
+            <h3 class="red">
+                Erschließung, Sicherung und Vergegenwärtigung<br/> des kulturellen Erbes
+            </h3>
+            <blockquote class="justify" lang="de">
+                Das Akademienprogramm [...] ist derzeit das größte geisteswissenschaftliche Forschungsprogramm
+                der Bundesrepublik Deutschland. Es wird von der Union der deutschen Akademien der Wissenschaften
+                koordiniert und fördert Langzeitforschungen in der geisteswissenschaftlichen, aber auch in der
+                sozialwissenschaftlichen Grundlagenforschung.<br/>
+                Innerhalb des [...] Akademienprogramms bearbeiten ca. 900 Mitarbeiterinnen
+                und Mitarbeiter insgesamt 144 Projekte mit 199 Arbeitsstellen. Das Akademienprogramm umfasst ein
+                Gesamtvolumen von 62,9 Millionen Euro (Stand: 2016).
+            </blockquote>
+            <p class="small down-25">
+                Quelle:
+                <a href="http://www.akademienunion.de/forschung/akademienprogramm/">
+                     http://www.akademienunion.de/forschung/akademienprogramm/
+                </a>
+            </p>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">F</h1>
+                <h2 class="line-height-one-five">
+                    Forschung
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Forschungsprojekte</h2>
+            <h4 class="red up-25">Geisteswissenschaftliche Forschung im Akademienprogramm</h4>
+            <div id="researchdata" style="display:none;">
+                <a href="http://www.regesta-imperii.de/id/0797-03-31_1_0_1_1_0_920_336">
+                    <img alt="Geschichte: Urkunde Karls des Großen von 797"
+                         src="resources/img/forschungsdaten_thumbs_ri.png"
+                         data-image="resources/img/forschungsdaten_ri.jpg"
+                         data-description="Gemeinfrei. Wikimedia Commons. https://upload.wikimedia.org/wikipedia/commons/b/b1/Dipl%C3%B4me_de_Charlemagne_donn%C3%A9_le_31_mars_797._-_Archives_Nationales_-_AE-II-42.jpg"
+                         style="display:none">
+                </a>
+
+                <a href="http://id.corpusvitrearum.de/images/3515">
+                    <img alt="Kunstgeschichte: Glasmalerei"
+                         src="resources/img/forschungsdaten_thumbs_cvma.png"
+                         data-image="resources/img/forschungsdaten_cvma.jpg"
+                         data-description="Rüdiger Tonojan, CVMA Deutschland/Freiburg, CC-BY 4.0 (http://creativecommons.org/licenses/by/4.0/)"
+                         style="display:none">
+                </a>
+
+                <a href="http://nbn-resolving.de/urn:nbn:de:0238-di002mz00k0001208">
+                    <img alt="Epigraphik: Inschrift auf dem Mainzer Domportal"
+                         src="resources/img/forschungsdaten_thumbs_inschriften.png"
+                         data-image="resources/img/forschungsdaten_inschriften.jpg"
+                         data-description="Von Benutzer:Moguntiner - Dieses Foto wurde im Mai 2005 von Benutzer:Moguntiner aufgenommen und ist eine verbesserte Version des Bildes vom 21.03.05, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=23986757"
+                         style="display:none">
+                </a>
+
+                <a href="http://www.controversia-et-confessio.de/cc-digital.html">
+                    <img alt="Theologie: Religiöse Streitschriften"
+                         src="resources/img/forschungsdaten_thumbs_controversia.png"
+                         data-image="resources/img/forschungsdaten_controversia.jpg"
+                         data-description="Gemeinfrei. Wikimedia Commons. Eber-Epitaph in der Stadtkirche Wittenberg, gemalt von Lucas Cranach d. J. https://commons.wikimedia.org/wiki/File:Weinberg-WB-1569.jpg"
+                         style="display:none">
+                </a>
+
+                <a href="http://www.gluck-gesamtausgabe.de/id/1-38-00-0">
+                    <img alt="Musik: Autograph aus Glucks Oper Alceste"
+                         src="resources/img/forschungsdaten_thumbs_gluck.png"
+                         data-image="resources/img/forschungsdaten_gluck.jpg"
+                         data-description="Gemeinfrei. Wikimedia Commons. https://de.wikipedia.org/wiki/Christoph_Willibald_Gluck#/media/File:Christoph_Willibald_Gluck_-_Misero_e_che_far%C3%B2_from_Alceste._%28BL_Zweig_MS_34_f._1r%29.jpg"
+                         style="display:none">
+                </a>
+
+                <a href="http://www.namenforschung.net/id/name/30/1">
+                    <img alt="Linguistik: Kartierte Verteilung des Namens 'Meier'"
+                         src="resources/img/forschungsdaten_thumbs_dfd.png"
+                         data-image="resources/img/forschungsdaten_dfd.jpg"
+                         data-description="Namenforschung.Net"
+                         style="display:none">
+                </a>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Grundlagenforschung</h2>
+            <h3 class="red up-25">Projektlaufzeiten im Akademienprogramm (Mainz)</h3>
+            <img src="resources/svg/timeline.svg" width="100%" style="position: relative; left: -3%" />
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">D</h1>
+                <h2 class="line-height-one-five">
+                    Digitale Akademie
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Digitale Forschungskomponenten</h2>
+            <h3 class="red up-25">Akademieprojekte mit digitalen Komponenten seit 2000 (Mainz)</h3>
+            <div class="down-50 ct-container">
+                <div class="ct-chart ct-major-twelfth project-count"></div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2 class="down-50">Die Digitale Akademie</h2>
+            <h4 class="red up-25">Digital Humanities Forschungsteam der Mainzer Akademie</h4>
+            <div class="row">
+                <div class="six columns">
+                    <a href="http://www.digitale-akademie.de/" style="position: relative; left: -10px;">
+                        <img src="resources/img/da-logo.png" alt="Logo der Digitalen Akademie" width="100%"/>
+                    </a>
+                    <blockquote class="justify x-small" style="position: relative; top: -20px;">
+                        Das Aufgabenspektrum umfasst die Konzeption, Gestaltung und Realisierung
+                        geisteswissenschaftlicher Applikationen und virtueller Forschungsumgebungen,
+                        die Beratung der Akademie zu allen Aspekten von Digitalisierungsvorhaben sowie
+                        die Projektbegleitung bei der Umsetzung digitaler Komponenten zusammen mit Partnern
+                        aus Wissenschaft und Wirtschaft.<br/>
+                        Gleichzeitig nimmt die Forschung an Kernfragen der Digitalen Geisteswissenschaften mit
+                        speziellem Fokus auf dem Langzeitcharakter des Akademienprogramms einen besonderen
+                        Stellenwert ein.
+                    </blockquote>
+                    <p class="x-small">
+                        <a href="http://www.digitale-akademie.de">http://www.digitale-akademie.de</a>
+                    </p>
+                </div>
+                <div class="six columns">
+                    <ul class="small down-50">
+                        <li class="substep">
+                            DH Forschung und DH Anwendungsorientierung
+                        </li>
+                        <li class="substep">
+                            Einbeziehung von Methoden aus der freien Wirtschaft und Softwareindustrie
+                        </li>
+                        <li class="substep">
+                            Team aus Geisteswissenschaftler_innen, Informatiker_innen und Mitarbeiter_innen
+                            mit dualer Qualifikation
+                        </li>
+                        <li class="substep">
+                            Standardisierung, <em>best practices</em>, Nachhaltikgeit
+                        </li>
+                        <li class="substep">
+                            22 Teammitglieder (Wissenschaftliche Mitarbeiter_innen, Trainees, studentische Mitarbeiter_innen)
+                        </li>
+                        <li class="substep">
+                            34 Projekte (Akademienprogramm, DFG und BMBF)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Kompetenzfelder</h2>
+            <h4 class="red up-25">Methodische Kompetenzen und Tätigkeitsbereiche in der Digitalen Akademie</h4>
+            <div class="mfp-lightbox row">
+                <div class="twelfe columns centered">
+                    <a href="resources/img/competences.png">
+                        <img src="resources/img/competences.png" style="width: 75%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">P</h1>
+                <h2 class="line-height-one-five">
+                    Projekte
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Projekte und Forschungsapplikationen</h2>
+            <h4 class="red up-25">Digitale Forschungsplattformen im Kurzüberblick</h4>
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-hash="/step-14/substep-1">
+                        <div class="six columns first">
+                            <a href="http://www.regesta-imperii.de/regesten" title="Regestenapplikation der Regesta Imperii">
+                                <img class="pull-up" src="resources/img/onlineapp-ri.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.regesta-imperii.de/regesten">http://www.regesta-imperii.de/regesten</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Regesta Imperii Online</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    Datenbank mit 173.000 Urkundenregesten im Volltext
+                                </li>
+                                <li>
+                                    Literaturdatenbank mit 1.7 Mio Titeln zum europäischen Mittelalter
+                                </li>
+                                <li>
+                                    Komplexe boolsche Suchlogik mit Schreibweisentoleranz
+                                </li>
+                                <li>
+                                    Alle Regesten in CEI via systemneutraler REST-Schnittstelle (Lizenz CC-BY)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-hash="/step-14/substep-2">
+                        <div class="six columns first">
+                            <a href="http://www.corpusvitrearum.de" title="Digitales Bildarchiv des Corpus Vitrearum">
+                                <img class="pull-up" src="resources/img/onlineapp-cvma.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.corpusvitrearum.de">http://www.corpusvitrearum.de</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Corpus Vitrearum Digital</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    Hochauflösende TIFF-Bilder zum freien Download (CC-BY)
+                                </li>
+                                <li>
+                                    Metadaten eingebettet als XMP (ISO-Standard)
+                                </li>
+                                <li>
+                                    Inhaltliche Erschließung mit kontrollierem Vokabular (ICONCLASS)
+                                </li>
+                                <li>
+                                    REST-Schnittstellen für Metadaten in XMP und JSON-LD (Semantic Web)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-hash="/step-14/substep-3">
+                        <div class="six columns first">
+                            <a href="http://www.inschriften.net" title="Deutsche Inschriften Online">
+                                <img class="pull-up" src="resources/img/onlineapp-di.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.inschriften.net/">http://www.inschriften.net</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Deutsche Inschriften Online</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    42 Inschriftenbände bzw. -bestände mit ca. 17.000 Katalognummern und 18.000
+                                    Abbildungen
+                                </li>
+                                <li>
+                                    Flexible XML Workflows zur Überführung der Banddaten in die Applikation
+                                </li>
+                                <li>
+                                    Persistente Referenzierung aller Artikel mittels URN der Deutschen Nationalbibliothek
+                                </li>
+                                <li>
+                                    Standardkonforme Ausgabe der Kataloartikel als TEI/EpiDoc via REST-Interface
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-hash="/step-14/substep-4">
+                        <div class="six columns first">
+                            <a href="http://www.controversia-et-confessio.de" title="Quellendatenbank zur Bekenntnisbildung und Konfessionalisierung">
+                                <img class="pull-up" src="resources/img/onlineapp-cc.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.controversia-et-confessio.de">http://www.controversia-et-confessio.de</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Controversia &amp; Confessio Digital</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    Quellen- und Personendatenbank mit komplexen Beziehungen (Autoren, Gegner, Drucker, etc.)
+                                </li>
+                                <li>
+                                    Umfängliche Suchmöglichkeiten (rollenbasiert, chronologisch, geographisch)
+                                </li>
+                                <li>
+                                    Aufbereitung der Daten für die historische Netzwerkanalyse
+                                </li>
+                                <li>
+                                    Webfrontend vollständig nach Responsive Web / Mobile First ansatz
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-hash="/step-14/substep-5">
+                        <div class="six columns first">
+                            <a href="http://www.gluck-gesamtausgabe.de" title="Digitales Gluck Werkverzeichnis">
+                                <img class="pull-up" src="resources/img/onlineapp-gluck.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.gluck-gesamtausgabe.de/">http://www.gluck-gesamtausgabe.de</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Digitales Gluck Werkverzeichnis</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    Bisher 70 ausführliche Werkbeschreibungen, 2000 Quellen aus 432 Archiven, über 1000 nachgewiesene
+                                    Personen (Sänger, Tänzer, Widmungsempfänger), 370 kartierte Spielorte
+                                </li>
+                                <li>
+                                    Komplexe Suchfunktionalitäten für Werke und Quellen, Register für Spielorte, Archivorte und Personen
+                                </li>
+                                <li>
+                                    Eigenständige bibliographische Suche nach Spezialliteratur zu Gluck
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-hash="/step-14/substep-6">
+                        <div class="six columns first">
+                            <a href="http://www.namenforschung.net" title="Digitales Familiennamenwörterbuch Deutschlands">
+                                <img class="pull-up" src="resources/img/onlineapp-dfd.png" width="100%" />
+                            </a>
+                            <p class="centered pull-up">
+                                Website: <a href="http://www.namenforschung.net/">http://www.namenforschung.net</a>
+                            </p>
+                        </div>
+                        <div class="six columns last">
+                            <h5><strong>Digitales Familiennamenwörterbuch</strong></h5>
+                            <ul class="even-left medium">
+                                <li>
+                                    Digitale Editionsumgebung, basierend auf nativer XML-Datenbank,
+                                    Erfassung der Namenartikel in TEI
+                                </li>
+                                <li>
+                                    Kartenapplikation zur Kartierung der Familiennamen auf Basis
+                                    der Telefonanschlüsse (Stand 2005)
+                                </li>
+                                <li>
+                                    REST-basierte Applikationsarchitektur mit TYPO3 Frontend zur Anzeige
+                                    und Recherche der Namenartikel
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">C</h1>
+                <h2 class="line-height-one-five">
+                    Corpus Vitrearum Medii Aevi
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Das Digitale Bildarchiv des CVMA</h2>
+            <h3 class="red up-25">Einige Funktionalitäten im Überblick</h3>
+            <div class="row mfp-lightbox">
+                <div class="seven columns">
+                    <a href="resources/img/screenshots_cvma_01.png">
+                        <img src="resources/img/screenshots_cvma_01.png" alt="Screenshot" title="Startseite des CVMA" width="100%" />
+                    </a>
+                    <p>
+                        <a class="small" href="http://www.corpusvitrearum.de/">http://www.corpusvitrearum.de/</a>
+                    </p>
+                </div>
+                <div class="four columns">
+                    <a href="resources/img/screenshots_cvma_02.png">
+                        <img src="resources/img/screenshots_cvma_02.png" alt="" title="" width="100%" />
+                    </a>
+                    <a href="resources/img/screenshots_cvma_03.png">
+                        <img src="resources/img/screenshots_cvma_03.png" alt="" title="" width="100%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Erfassungsworkflow</h2>
+            <h3 class="red up-25">Systemneutrale Bild &amp; Metadaten</h3>
+            <div class="row mfp-lightbox">
+                <div class="five columns">
+                    <a href="resources/img/cvma_workflow.png">
+                        <img src="resources/img/cvma_workflow.png" alt="" title="" height="540" />
+                    </a>
+                </div>
+                <div class="seven columns">
+                    <div class="row">
+                        <div class="four columns">
+                            <a href="resources/img/cvma_xmp_exiftool.jpg">
+                                <img src="resources/img/cvma_xmp_exiftool.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="four columns">
+                            <a href="resources/img/cvma_xmp_ps.jpg">
+                                <img src="resources/img/cvma_xmp_ps.jpg" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                        <div class="four columns">
+                            <a href="resources/img/cvma_xmp_typo3.png">
+                                <img src="resources/img/cvma_xmp_typo3.png" alt="" title="" width="100%" />
+                            </a>
+                        </div>
+                    </div>
+                    <p class="x-small">Metadaten in der Exiftool-GUI, Adobe Photoshop und in TYPO3</p>
+                    <a href="resources/img/cvma_ddd.png">
+                        <img src="resources/img/cvma_ddd.png" alt="" title="" width="100%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">I</h1>
+                <h2 class="line-height-one-five">
+                    Inschriften Online
+                </h2>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Epigraphische Plattform</h2>
+            <h3 class="red up-25">Einige Funktionalitäten im Überblick</h3>
+            <div class="row mfp-lightbox">
+                <div class="seven columns">
+                    <a href="resources/img/dio_screenshot_01.png">
+                        <img src="resources/img/dio_screenshot_01.png" alt="Screenshot" title="Startseite von Deutsche Inschriften Online" width="100%" />
+                    </a>
+                    <p>
+                        <a class="small" href="http://www.inschriften.net/">http://www.inschriften.net/</a>
+                    </p>
+                </div>
+                <div class="three columns">
+                    <a href="resources/img/dio_odt.png">
+                        <img src="resources/img/dio_odt.png" alt="" title="" width="100%" />
+                    </a>
+                    <a href="resources/img/dio_bilder.png">
+                        <img src="resources/img/dio_bilder.png" alt="" title="" width="100%" />
+                    </a>
+                    <a href="resources/img/dio_typo3.png">
+                        <img src="resources/img/dio_typo3.png" alt="" title="" width="100%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">E</h1>
+                <h2 class="line-height-one-five">
+                    Edition der Augsburger Baumeisterbücher
+                </h2>
+                <h4>(Sneak Preview)</h4>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Digitale Edition</h2>
+            <h3 class="red up-25">der mittelalterlichen Stadtrechnungen von Augsburg</h3>
+            <div class="row mfp-lightbox">
+                <div class="seven columns">
+                    <a href="resources/img/bmb_screenshot_01.png">
+                        <img src="resources/img/bmb_screenshot_01.png" alt="Screenshot" title="Startseite der Baumeisterbücher" width="100%" />
+                    </a>
+                </div>
+                <div class="four columns">
+                    <a href="resources/img/bmb_screenshot_02.png">
+                        <img src="resources/img/bmb_screenshot_02.png" alt="" title="" width="100%" />
+                    </a>
+                    <a href="resources/img/bmb_screenshot_03.png">
+                        <img src="resources/img/bmb_screenshot_03.png" alt="" title="" width="100%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Arbeitsumgebung</h2>
+            <h3 class="red up-25">Basierend auf Transcribo, FuD und TYPO3</h3>
+            <div class="row mfp-lightbox">
+                <div class="seven columns">
+                    <a href="resources/img/bmb_transcribo.png">
+                        <img src="resources/img/bmb_transcribo.png" alt="Screenshot" title="" width="100%" />
+                    </a>
+                </div>
+                <div class="four columns">
+                    <a href="resources/img/bmb_fud.png">
+                        <img src="resources/img/bmb_fud.png" alt="" title="" width="100%" />
+                    </a>
+                    <a href="resources/img/bmb_typo3.png">
+                        <img src="resources/img/bmb_typo3.png" alt="" title="" width="100%" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="centered">
+                <h1 class="red">Z</h1>
+                <h2 class="line-height-one-five">
+                    Zuende
+                </h2>
+                <h3>Vielen Dank für die Aufmerksamkeit!</h3>
+            </div>
+        </div>
+
+        <div class="step">
+
+            <h2>Literature und Slides</h2>
+
+            <h4>Software</h4>
+
+            <ul class="small">
+                <li>
+                    <a href="https://github.com/impress/impress.js">Impress.js</a> (Präsentation)
+                </li>
+                <li>
+                    <a href="https://jquery.com/">jQuery</a> (Animationen)
+                </li>
+                <li>
+                    <a href="https://github.com/vvvmax/unitegallery/">Unite Gallery</a> (Bildergallerien)
+                </li>
+                <li>
+                    <a href="https://github.com/dimsemenov/Magnific-Popup">Magnific Popup</a> (Lightbox)
+                </li>
+                <li>
+                    <a href="https://github.com/gionkunz/chartist-js">Chartist</a> (Diagramme)
+                </li>
+                <li>
+                    <a href="http://getskeleton.com/">Skeleton CSS</a> (CSS Boilerplate)
+                </li>
+            </ul>
+
+            <h4>Download</h4>
+            <ul class="small">
+                <li>
+                    <a href="https://github.com/metacontext/2017-dhkolloq-trier">
+                        https://github.com/metacontext/2017-dhkolloq-trier
+                    </a>
+                </li>
+                <li>
+                    Alle Inhalte, Illustrationen und Bilder sind frei zur Weiterverwendung und Modifikation.<br/>
+                    Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, Torsten Schrade
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- jquery -->
+    <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+
+    <!-- unite gallery -->
+    <script type="text/javascript" src="vendor/unitegallery/js/unitegallery.min.js"></script>
+    <script type="text/javascript" src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+    <script type="text/javascript" src="resources/js/unite.gallery.js"></script>
+
+    <!-- chartist -->
+    <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+    <script src="resources/js/chartist.charts.js"></script>
+
+    <!-- codemirror -->
+    <script src="vendor/codemirror/lib/codemirror.js"></script>
+    <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+
+    <!-- highlight -->
+    <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="resources/js/hljs.linenumbering.js"></script>
+
+    <!-- swiper -->
+    <script src="vendor/swiper/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+
+    <!-- magnific popup -->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+    <script src="resources/js/magnific-popup.lightbox.js"></script>
+
+    <!-- impress.mod.js -->
+    <script src="vendor/impress/impress.fork.js"></script>
+    <script src="vendor/impress/impress-slidenum.js"></script>
+    <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+
+</body>
+</html>
