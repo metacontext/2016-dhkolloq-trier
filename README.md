@@ -1,15 +1,10 @@
-### Date | Place
+### 26.01.2017 | Universität Trier
 
-# Title
+# Von 'C' wie 'Corpus' bis 'W' wie 'Wörterbuch'.
 
-## Subtitle
+## Digitale Methodik in der geisteswissenschaftlichen Grundlagen- und Langzeitforschung.
 
-### Author
+This repository contains all code, illustrations and images for the lecture given at 
+Trier University on 25.01.2017
 
-Description
-
-The code of this boilerplate is at https://github.com/digicademy/impress-js-boilerplate
-
-A live demo can be found at http://digicademy.github.io/impress-js-boilerplate/
-
-Released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), @digicademy
+Released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), Torsten Schrade
